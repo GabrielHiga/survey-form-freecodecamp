@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="range_freecodecamp"><span class="text_freecodecamp">This is a Survey Form for</span> <img src="images/freecodecamp.png" alt="FreeCodeCamp"></div>
+    
+        <div id="main">
+            <h1 id="title">
+            Survey Form
+        </div>
+
+        <p id="description">
+          Let us know how we can improve freeCodeCamp
+        </p>
+
+      <form id="survey-form">
+        <label id="name-label" for="" >Name:</label>
+        <input id="name" class="box"  type="text" placeholder="Your name" size="45" required><br><br>
+
+        <label id="email-label" for="">E-mail:</label>
+        <input id="email" class="box" type="email" placeholder="your@email.com" size="45" required><br><br>
+
+        <label id="number-label" for="">Age:</label>
+        <input id="number" class="box" type="number" placeholder="Age" min="1" max="100"  ><br><br>
+        
+        <label id="dropdown-label" for="">Which option best describes your current role? </label><br>
+        <select id="dropdown" class="box" name="cars">
+          <option value="volvo">Student</option>
+          <option value="saab">Full Time Job</option>
+          <option value="fiat">Full Time Learner</option>
+          <option value="audi">Other</option>
+        </select><br><br>
+        
+        <div class="radio">
+           <label for="male">Male
+            <input id="male" type="radio" name="gender" value="male">
+          </label>
+          <label for="female">Female
+            <input id="female" type="radio" name="gender" value="female">
+          </label>
+               <label for="other">Other
+            <input id="other" type="radio" name="gender" value="other">
+          </label>
+        </div><br>
+        
+        <label id="dropdown-label" for="">Things that should be improved in the future (Check all that apply): </label><br><br>
+      
+        <input type="checkbox" value="attribute">
+        <label id="check-label" for="">Front End Projects </label><br>
+        <input type="checkbox" value="attribute">
+        <label id="check-label" for="">Back End Projects </label><br>
+        <input type="checkbox" value="attribute">
+        <label id="check-label" for="">Challenges </label><br>
+        
+        <br><br>
+
+
+
+          
+
+
+        <textarea class="box" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea><br><br>
+        <button id="submit" class="button">Submit</button>
+      </form><!-- End Form-->
+
+    </div><!-- End Main --> 
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+</html>
